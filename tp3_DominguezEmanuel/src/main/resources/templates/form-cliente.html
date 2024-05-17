@@ -7,11 +7,73 @@
 <body>
 	
 	<header>
-		<h1>Formulario de Registro</h1>
+		<h1><u>Formulario de Registro</u></h1>
 	</header>
 	
 	<form>
 	
+		<label for="dni">Número de Documento: </label>
+		<input type="number" id="dni" nombre="dni" required><br><br>
+		
+		<label for="nombres">Nombre/s: </label>
+		<input type="text" id="nombres" nombre="nombres" required><br><br>
+		
+		<label for="apellidos">Apellido/s: </label>
+		<input for="text" id="apellidos" name="apellidos" required><br><br>
+		
+		<label for="fechaNacimiento">Fecha de Nacimiento: </label>
+		<input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+		
+		<legend>Género</legend>
+		<label for="generoMasculino">Masculino</label>
+		<input type="radio" id="generoMasculino" name="genero" value="masculino">
+		<label for="generoFemenino">Femenino</label>
+		<input type="radio" id="generoFemenino" name="genero" value="femenino">
+		<label for="generoDesconocido">Desconocido</label>
+		<input type="radio" id="generoDesconocido" name="genero" value="desconocido"><br><br>
+		
+		<label for="correo">Correo Electrónico: </label>
+		<input type="email" id="correo" name="correo" required><br><br>
+		
+		<label for="domicilio">Domicilio: </label>
+		<input type="text" id="domicilio" name="domicilio" required><br><br>
+		
+		<label for="provincia">Provincia</label>
+		<select id="provincia" name="provincia" required>
+			<option value="jujuy">Jujuy</option>
+			<option value="salta">Salta</option>
+			<option value="tucuman">Tucumán</option>
+			<option value="catamarca">Catamarca</option>
+			<option value="laRioja">La Rioja</option>
+		</select>
+		<br><br>
+		
+		<label for="telefono">Celular: </label>
+		<input type="number" id="telefono" name="telefono"><br><br>
+		
+		<legend>Categorías de Interés</legend>
+		<label for="tecnologia">Tecnología</label>
+		<input type="checkbox" id="tecnologia" name="categoria" value="tecnologia">
+		<label for="electrodomesticos">Electrodomésticos</label>
+		<input type="checkbox" id="electrodomesticos" name="categoria" value="electrodomestico">
+		<label for="deporte">Deporte</label>
+		<input type="checkbox" id="deporte" name="categoria" value="deporte">
+		<label for="cocina">Cocina</label>
+		<input type="checkbox" id="cocina" name="categoria" value="cocina"><br><br>
+		
+		<label for="sugerencias">Sugerencias para la Empresa:</label><br>
+		<textarea id="sugerencias" name="sugerencias" rows="4" cols="50" placeholder="Escribe tus sugerencias aquí..."></textarea><br><br>
+		
+		<label for="contraseña">Contraseña: </label>
+		<input type="password" id="contraseña" name="contraseña" required><br><br>
+		
+		<label for="terminos">Acepto los términos y condiciones</label>
+		<input type="checkbox" id="terminos" name="terminos" required><br><br>
+		
+		<label for="informacion">Acepto recibir información relativa a la Empresa</label>
+		<input type="checkbox" id="informacion" name="informacion"><br><br>
+		
+		<button type="submit">Enviar</button>
 	</form>
 </body>
 </html>
