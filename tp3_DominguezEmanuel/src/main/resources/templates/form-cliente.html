@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 	<title>Formulario de Cliente</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
 </head>
-<body id="body">
+<body id="formulario">
 	<header id="cabecera">
 		<h1>Formulario de Registro</h1>
 	</header>
@@ -13,18 +13,18 @@
 	<form id="form" action="#" method="post">
 	
 		<label for="dni">Número de Documento: </label>
-		<input type="number" id="dni" nombre="dni" required><br><br>
+		<input type="number" id="dni" name="dni" required><br><br>
 		
 		<label for="nombres">Nombre/s: </label>
-		<input type="text" id="nombres" nombre="nombres" required><br><br>
+		<input type="text" id="nombres" name="nombres" required><br><br>
 		
 		<label for="apellidos">Apellido/s: </label>
-		<input for="text" id="apellidos" name="apellidos" required><br><br>
+		<input type="text" id="apellidos" name="apellidos" required><br><br>
 		
 		<label for="fechaNacimiento">Fecha de Nacimiento: </label>
 		<input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
 		
-		<legend>Género</legend>
+		<p>Género</p>
 		<label for="generoMasculino">Masculino</label>
 		<input type="radio" id="generoMasculino" name="genero" value="MASCULINO">
 		<label for="generoFemenino">Femenino</label>
@@ -40,6 +40,7 @@
 		
 		<label for="provincia">Provincia</label>
 		<select id="provincia" name="provincia" required>
+			<option value="" disabled selected>Seleccione una opción</option>
 			<option value="JUJUY">Jujuy</option>
 			<option value="SALTA">Salta</option>
 			<option value="TUCUMAN">Tucumán</option>
@@ -51,7 +52,7 @@
 		<label for="telefono">Celular: </label>
 		<input type="number" id="telefono" name="telefono"><br><br>
 		
-		<legend>Categorías de Interés</legend>
+		<p>Categorías de Interés</p>
 		<label for="tecnologia">Tecnología</label>
 		<input type="checkbox" id="tecnologia" name="categoria" value="TECNOLOGIA">
 		<label for="electrodomesticos">Electrodomésticos</label>
@@ -77,12 +78,11 @@
 		<br><br>
 	</form>
 	
-	<footer id="pie_de_pagina">
-		<p>Autor: Emanuel Dominguez</p>
-		<p>Contacto:</p>
+	<footer id="pie_de_pagina" class="footer">
+		<p>Contact</p>
 		<ul>
 			<li>Correo: dmanu401@gmail.com</li>
-			<li><a href="https://www.facebook.com/profile.php?id=100023686131131">Facebook: Emanuel Dominguez</a></li>
+			<li><a href="https://www.facebook.com/profile.php?id=100023686131131">Facebook</a></li>
 		</ul>
 	</footer>
 </body>

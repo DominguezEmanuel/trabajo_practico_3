@@ -1,35 +1,52 @@
 @charset "UTF-8";
 
-#body{
-	background-image:url(../img/astronauta.jpg);
+#formulario{
+	background-image:url(../img/montaña.jpg);
 	background-repeat:no-repeat;
 }
 
 #cabecera{
 	background-color:#ffffff;
-	opacity:0.5;
+	text-transform:uppercase;
 	text-align:center;
 	color:#000000;
 	font-size:1.3em;
+	opacity:0.5;
 }
 
 form{
 	padding:auto;
 	top:50px;
-	color:#ffffff;
+	color:#000000;
 	width: 50%;
     margin: 0 auto;
     padding-left: 2em;
 	padding-right: 2em;
 	padding-top:1em;
+	padding-bottom:1em;
 	border-radius: 25px;
-	background-color: #000000;
-  	border: 1px solid black;
-  	opacity:0.8;
+	background-color:white;
+  	opacity:0.9;
 }
 
 button{
-	
+	border-radius:30px;	
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	cursor:pointer;
+	background-color: #ff4d4d;
+	margin-left:30em;
+	margin-right:20em;
+}
+
+button:hover{
+	background-color:#ff8080;
+  	color: white;
 }
 
 #pie_de_pagina{
@@ -38,44 +55,77 @@ button{
   	right: 10px;
   	width: 250px;
   	padding: 10px;
-  	background-color: #000000;
-  	border: 1px solid black;
-  	border-radius: 25px;
+  	background-image:url(../img/fondo2.png);
   	opacity:0.8;
+  	border-radius: 25px;
 }
 
 body{
-	color:#ffffff;
-	background-image:url(../img/fondo2.png);
+	background-color:#d9d9f2;
 }
 
 .navegacion{
-	background-color:#2d8659;
-	opacity:0.7;
+	background-image:url(../img/paisaje_espacio.jpg);
+	background-color:white;
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size: 50% auto;
 	border-radius:25px;
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-top:2px;
 	color:#000000;
+	border:1px solid #000;
+	
 }
 
-img{
-	display: block;
- 	margin-left: auto;
-  	margin-right: auto;
+#indice{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-left:15em;
+	text-transform:uppercase;
+	color:#000000;
 }
 
-section{
-	background-color:#2d8659;
-	border-radius:25px;
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-top:2px;
+.seccion{
+	border-radius:1em;
+	padding-top:1em;
 	padding-bottom:1em;
-	opacity:0.7;
+}
+
+.secciones:link{
+	text-decoration: none;
+	text-transform:uppercase;
+	color:white;
+}
+
+.principal{
+	background-color:#cce6ff;
+	border-radius:1em;
+	border:1px solid #000;
+	padding-top:2px;
+	padding-bottom:2px;	
+	
+}
+
+.titulo{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000;
+}
+
+.text{
+	text-align:center;
+}
+
+.tabla{
+	margin-right:450px;
+  	margin-left:450px;	
 }
 
 .tabla, th, td{
+	 width: 50%;
 	 border: 1px solid #000;
 	 border-collapse: collapse;
 }
@@ -93,34 +143,35 @@ th{
  	color: white;
 }
 
-h2{
-	text-align:center;
-	text-transform:uppercase;
-	color:#000000;
+.image{
+  	margin-right:550px;
+  	margin-left:550px;
+  	border-radius:25px;
+	border:1px solid #000;
 }
 
-.aside{
+.adicional{
+	margin-right:10em;
+  	margin-left:105em;
 	width:200px;
 	height:400px;
-	background-color:#2d8659;
+	background-image:url(../img/fondo2.png);
+	opacity:0.8;
+	color:#ffffff;
 	border-radius:25px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top:2px;
+	text-align:center;
 	
 }
 
-.aside p {
-	color:black;
-}
-
-.image{
+.adicional img{
 	border-radius:25px;
-	border:1px solid #000;
 }
 
 .enlace:link, .enlace:visited{
-	background-color: #f44336;
+	background-color: #ff4d4d;
   	color: white;
  	padding: 5px 5px;
   	text-align: center;
@@ -134,7 +185,30 @@ h2{
   color: white;
 }
 
-#footer{
-	
+.footer p{
+	text-align:center;
+	text-transform:uppercase;
+	font-family: "Arial Black", Arial, sans-serif;
 }
+
+.footer a:link , .footer a:visited{
+	background-color: #0099ff;
+  	color: white;
+ 	padding: 5px 5px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius:3px;
+}
+
+.footer a:hover, .footer a:active{
+	background-color:#80bfff;
+  	color: white;
+}
+
+.regreso{
+	margin-right:55em;
+  	margin-left:55em;	
+}
+
 
