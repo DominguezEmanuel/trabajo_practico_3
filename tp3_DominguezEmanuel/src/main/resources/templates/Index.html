@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Programación Visual</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav class="navegacion">
         	<h2 id="indice"><u>Índice</u></h2>
            	<ol>
-           		<li><a href="#section1">¿En qué consiste la Programación Visual?</a></li>
-           		<li><a href="#section2">¿En qué se diferencia de la Programación "normal"?</a></li>
-           		<li><a href="#section3">¿Cuáles son las ventajas e inconvenientes de la Programación Visual?</a></li>
+           		<li><a href="#section1" class="enlace">¿En qué consiste la Programación Visual?</a></li>
+           		<li><a href="#section2" class="enlace">¿En qué se diferencia de la Programación "normal"?</a></li>
+           		<li><a href="#section3" class="enlace">¿Cuáles son las ventajas e inconvenientes de la Programación Visual?</a></li>
            	</ol>
+           	<br>
         </nav>
     </header>
-	
-	<img src="../static/img/main.jpg" alt="imagen principal" width="500" height="350">
-	
+	<br>
 	<main>
 		<section>
 			<h2 id="section1"><u>¿En qué consiste la Programación Visual?</u></h2>
@@ -37,7 +37,8 @@
 				<li>Orientado a objetos: hay objetos individuales con tareas definidas asignadas.</li>
 			</ul>
 		</section>
-			
+			<img src="../static/img/main.jpg" alt="imagen principal" width="900" height="350">
+			<br>
 		<section>
 			<h2 id="section2"><u>¿En qué se diferencia de la Programación "normal"?</u></h2>
 			<p>La principal diferencia es que los programadores visuales no tienen que lidiar con las complejidades de la sintaxis de comandos.
@@ -46,14 +47,13 @@
 			Aunque muchos editores de programación tienen la función “Autocompletar”, para que los comandos se completen y los procedimientos se cierren por sí mismos, 
 			los programadores son susceptibles de cometer errores: si se olvida un carácter, toda la tarea da error. 
 			Esto a menudo requiere una larga búsqueda de errores.</p>
-			<img src="../static/img/error.png" alt="errores susceptibles" width="500" height="300">
 		</section>
-		
-		
+			<img src="../static/img/error.png" alt="errores susceptibles" width="900" height="300">
+			<br>
 		<section>
 			<h2 id="section3"><u>¿Cuáles son las ventajas e inconvenientes de la Programación Visual?</u></h2>
 			<p>La Programación Visual presenta los siguientes pro y contras:</p>
-			<table>
+			<table class="tabla">
 				<tr>
             		<th>Ventajas</th>
             		<th>Desventajas</th>
@@ -77,15 +77,15 @@
 		</section>	
 	</main>
 	
-	<aside>
+	<aside class="aside">
 		<p>
 		Para que personas sin experiencia puedan aprender a programar de forma sencilla, se han inventado los <b>lenguajes visuales</b>,
 		como Stratch. En los lenguajes visuales se programa uniendo bloques, que son dibujos que tienen código asociado.</p>
-		<img src="../static/img/scratch.png" alt="lenguaje stratch" width="300" height="300">
-		<p><a href="https://es.wikipedia.org/wiki/Scratch_(lenguaje_de_programaci%C3%B3n)">Saber más</a></p>
+		<img src="../static/img/scratch.png" alt="lenguaje stratch" width="150" height="150" class="image">
+		<p><a href="https://es.wikipedia.org/wiki/Scratch_(lenguaje_de_programaci%C3%B3n)" class="enlace">Saber más</a></p>
 	</aside>
 	
-	<footer>
+	<footer id="footer">
 		<p>Autor: Emanuel Dominguez</p>
 		<p>Contacto:</p>
 		<ul>
@@ -94,7 +94,7 @@
 		</ul>
 	</footer>
 	
-	<p><a href="#indice">Ir a índice</a></p>
+	<p><a href="#indice" class="enlace">Ir a índice</a></p>
 	
 </body>
 

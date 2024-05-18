@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+	<title>Formulario de Cliente</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
 </head>
-<body>
-	
-	<header>
-		<h1><u>Formulario de Registro</u></h1>
+<body id="body">
+	<header id="cabecera">
+		<h1>Formulario de Registro</h1>
 	</header>
 	
-	<form>
+	<form id="form" action="#" method="post">
 	
 		<label for="dni">Número de Documento: </label>
 		<input type="number" id="dni" nombre="dni" required><br><br>
@@ -26,11 +26,11 @@
 		
 		<legend>Género</legend>
 		<label for="generoMasculino">Masculino</label>
-		<input type="radio" id="generoMasculino" name="genero" value="masculino">
+		<input type="radio" id="generoMasculino" name="genero" value="MASCULINO">
 		<label for="generoFemenino">Femenino</label>
-		<input type="radio" id="generoFemenino" name="genero" value="femenino">
+		<input type="radio" id="generoFemenino" name="genero" value="FEMENINO">
 		<label for="generoDesconocido">Desconocido</label>
-		<input type="radio" id="generoDesconocido" name="genero" value="desconocido"><br><br>
+		<input type="radio" id="generoDesconocido" name="genero" value="DESCONOCIDO"><br><br>
 		
 		<label for="correo">Correo Electrónico: </label>
 		<input type="email" id="correo" name="correo" required><br><br>
@@ -40,11 +40,11 @@
 		
 		<label for="provincia">Provincia</label>
 		<select id="provincia" name="provincia" required>
-			<option value="jujuy">Jujuy</option>
-			<option value="salta">Salta</option>
-			<option value="tucuman">Tucumán</option>
-			<option value="catamarca">Catamarca</option>
-			<option value="laRioja">La Rioja</option>
+			<option value="JUJUY">Jujuy</option>
+			<option value="SALTA">Salta</option>
+			<option value="TUCUMAN">Tucumán</option>
+			<option value="CATAMARCA">Catamarca</option>
+			<option value="LARIOJA">La Rioja</option>
 		</select>
 		<br><br>
 		
@@ -53,13 +53,13 @@
 		
 		<legend>Categorías de Interés</legend>
 		<label for="tecnologia">Tecnología</label>
-		<input type="checkbox" id="tecnologia" name="categoria" value="tecnologia">
+		<input type="checkbox" id="tecnologia" name="categoria" value="TECNOLOGIA">
 		<label for="electrodomesticos">Electrodomésticos</label>
-		<input type="checkbox" id="electrodomesticos" name="categoria" value="electrodomestico">
+		<input type="checkbox" id="electrodomesticos" name="categoria" value="ELECTRODOMESTICO">
 		<label for="deporte">Deporte</label>
-		<input type="checkbox" id="deporte" name="categoria" value="deporte">
+		<input type="checkbox" id="deporte" name="categoria" value="DEPORTE">
 		<label for="cocina">Cocina</label>
-		<input type="checkbox" id="cocina" name="categoria" value="cocina"><br><br>
+		<input type="checkbox" id="cocina" name="categoria" value="COCINA"><br><br>
 		
 		<label for="sugerencias">Sugerencias para la Empresa:</label><br>
 		<textarea id="sugerencias" name="sugerencias" rows="4" cols="50" placeholder="Escribe tus sugerencias aquí..."></textarea><br><br>
@@ -74,6 +74,16 @@
 		<input type="checkbox" id="informacion" name="informacion"><br><br>
 		
 		<button type="submit">Enviar</button>
+		<br><br>
 	</form>
+	
+	<footer id="pie_de_pagina">
+		<p>Autor: Emanuel Dominguez</p>
+		<p>Contacto:</p>
+		<ul>
+			<li>Correo: dmanu401@gmail.com</li>
+			<li><a href="https://www.facebook.com/profile.php?id=100023686131131">Facebook: Emanuel Dominguez</a></li>
+		</ul>
+	</footer>
 </body>
 </html>
